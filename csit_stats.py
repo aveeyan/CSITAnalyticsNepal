@@ -37,7 +37,7 @@ seats_skewness = scipy_stats.skew(seats_per_institute)
 seats_kurtosis = scipy_stats.kurtosis(seats_per_institute)
 
 # PORTION III: Number of District having institutions with CSIT
-districts_csit = df["District"].unique()
+districts_csit = (df["District"].unique()).tolist()
 districts_csit_count = len(districts_csit)
 
 
